@@ -1,0 +1,59 @@
+
+    {{#partial "content"}}
+        <div class="">
+            <h2>Squads</h2>
+            <ul>
+                <li>
+
+        {{#if squads}}
+            {{#each squads  }}
+                <a href="#" class="squad-photo">
+                </a>
+
+                <a href="#" class="squad-compare">Compare</a>
+                <div class="product-rating">
+                    <div>
+                        <span class="squad-stars" style="width: 60px" >
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </span>
+                    </div>
+
+                    <span><a href="#">82 reviews</a></span>
+                </div>
+
+                <p class="squad-description">{{ name }}</p>
+                <p>{{ heroees }}</p>
+                <p class="squad-price">{{ cause }}</p>
+                <p>{{ squadpeople }}</p>
+                <p>{{ squadId }}</p>
+
+                <p>{{ squads.heroees }}</p>
+
+git remote add origii
+<!--                {{#each this.heroees as |item index|}}-->
+<!--                    <p>{{ heroees }}</p>-->
+<!--                    <li>-->
+<!--                        {{item.[index]}}-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        {{heroees.[index]}}-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        {{heroees}}-->
+<!--                    </li>-->
+<!--                    <p>Index is: {{index}}</p>-->
+<!--                {{/each}}-->
+
+
+            {{/each}}
+        </li>
+        </ul>
+        {{else}}
+            <p>There is no squad available</p>
+        {{/if}}
+
+        </div>
+    {{/partial}}
+    {{> layout.hbs}}
+
+

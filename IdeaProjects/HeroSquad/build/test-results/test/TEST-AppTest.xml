@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-24T12:48:22" hostname="lika" time="0.014">
+  <properties/>
+  <testcase name="Squads" classname="AppTest" time="0.014"/>
+  <system-out><![CDATA[The squad is using a constructor: []
+The squad is using a constructor: [Vim]
+The squad is using a constructor: [Vim, NaeNae]
+Name is:Flyin
+Name is:Space
+Flyin
+Jasper  Flyin
+{Jasper=[Vim, NaeNae, Deros], Vera=[Vimed, Onii, Chan]}
+Jasper Jasper Jasper Vera Vera
+Jasper Vera
+One[Vim, NaeNae, Deros] and two [Vimed, Onii, Chan]
+The squad is: [Vim, NaeNae, Deros]
+The squad is using a constructor: [Vim, NaeNae, Deros]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

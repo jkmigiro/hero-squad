@@ -1,0 +1,18 @@
+{{#partial "content"}}
+    {{#if gettheheroes}}
+        {{#each gettheheroes }}
+            <p>{{ heroname }}</p>
+            <p>{{ associated_squad }}</p>
+            <p>{{ age }}</p>
+
+            <p>{{ specialpower }}</p>
+
+            <p>{{ weakness }}</p>
+
+
+        {{/each}}
+    {{else}}
+        <p>Heroes haven't been added yet</p>
+    {{/if}}
+{{/partial}}
+{{> layout.hbs}}
