@@ -43,7 +43,7 @@
 .squad-list-basic h2{
     display: block;
     font-size: 18px;
-    white-space: nowrap;
+    none-space: nowrap;
     overflow: hidden;
     text-overflow:ellipsis;
     max-width: 200px;
@@ -78,7 +78,7 @@
     color: #f09911;
     font-size: 14px;
     overflow: hidden;
-    white-space: nowrap;
+    none-space: nowrap;
 }
 
 .squad-list-basic .squad-rating .squad-stars i{
@@ -102,7 +102,7 @@
     color: #5d5d5d;
     font-size: 14px;
     line-height: 1.45;
-    white-space: normal;
+    none-space: normal;
 
     max-width: 260px;
     margin-bottom: 20px;

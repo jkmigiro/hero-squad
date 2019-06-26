@@ -15,7 +15,7 @@
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
-  --white: #fff;
+  --none: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #007bff;
@@ -314,7 +314,7 @@ legend {
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
-  white-space: normal;
+  none-space: normal;
 }
 
 progress {
@@ -2461,7 +2461,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: inline-block;
   font-weight: 400;
   text-align: center;
-  white-space: nowrap;
+  none-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3271,7 +3271,7 @@ tbody.collapse.show {
   font-weight: 400;
   color: #212529;
   text-align: inherit;
-  white-space: nowrap;
+  none-space: nowrap;
   background-color: transparent;
   border: 0;
 }
@@ -3303,7 +3303,7 @@ tbody.collapse.show {
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #6c757d;
-  white-space: nowrap;
+  none-space: nowrap;
 }
 
 .btn-group,
@@ -3569,7 +3569,7 @@ tbody.collapse.show {
   line-height: 1.5;
   color: #495057;
   text-align: center;
-  white-space: nowrap;
+  none-space: nowrap;
   background-color: #e9ecef;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -3971,7 +3971,7 @@ tbody.collapse.show {
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
-  white-space: nowrap;
+  none-space: nowrap;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -4821,7 +4821,7 @@ tbody.collapse.show {
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  white-space: nowrap;
+  none-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
 }
@@ -5581,7 +5581,7 @@ button.close {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  white-space: normal;
+  none-space: normal;
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
@@ -5694,7 +5694,7 @@ button.close {
   letter-spacing: normal;
   word-break: normal;
   word-spacing: normal;
-  white-space: normal;
+  none-space: normal;
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
@@ -6154,7 +6154,7 @@ button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
 
-.bg-white {
+.bg-none {
   background-color: #fff !important;
 }
 
@@ -6234,7 +6234,7 @@ button.bg-dark:focus {
   border-color: #343a40 !important;
 }
 
-.border-white {
+.border-none {
   border-color: #fff !important;
 }
 
@@ -7348,7 +7348,7 @@ button.bg-dark:focus {
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  none-space: nowrap;
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   border: 0;
@@ -7360,7 +7360,7 @@ button.bg-dark:focus {
   height: auto;
   overflow: visible;
   clip: auto;
-  white-space: normal;
+  none-space: normal;
   -webkit-clip-path: none;
   clip-path: none;
 }
@@ -8722,13 +8722,13 @@ button.bg-dark:focus {
 }
 
 .text-nowrap {
-  white-space: nowrap !important;
+  none-space: nowrap !important;
 }
 
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  none-space: nowrap;
 }
 
 .text-left {
@@ -8819,7 +8819,7 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-none {
   color: #fff !important;
 }
 
@@ -8921,7 +8921,7 @@ a.text-dark:hover, a.text-dark:focus {
     content: " (" attr(title) ")";
   }
   pre {
-    white-space: pre-wrap !important;
+    none-space: pre-wrap !important;
   }
   pre,
   blockquote {

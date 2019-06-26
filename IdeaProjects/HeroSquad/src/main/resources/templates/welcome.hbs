@@ -1,25 +1,26 @@
 
 
 {{#partial "content"}}
+    <div class="contact-form bounceInRight delay-2s">
 
-<div id="frm" class="theform">
-    <form action="/newsquad" method="post">
+        <h2>The Squads</h2>
+        <form action="/newsquad" method="post">
 
-        <h3 class="form-title">Create Squad</h3>
-        <div class="form-group">
-            <input id="name" class="form-input" placeholder="Name" name="name" type="text">
-            <div class="controls">
+<div class="textbox">
+    <img src="users.svg">
+    <input type="text" name="" placeholder="Enter Squad Name">
+
+</div>
+            <div class="textbox">
+                <img src="user-ninja.svg">
+                <input type="text" name="" placeholder="Enter Squad Cause">
             </div>
-        </div>
-        <div class="form-group">
-            <input id="email" class="form-input" placeholder="Cause" name="cause" type="text">
-        </div>
-        <div class="form-group">
-            <button type="submit" name="submit" id="submit"  class="btn btn-dark form-submit">Go!</button>
-        </div>
-        <div id="error_message" class="ajax_response" ></div>
-        <div id="success_message" class="ajax_response"></div>
-    </form>
+
+
+            <input type="submit" name="" value="Continue">
+
+        </form>
+    </div>
     {{#if submitted}}
         {{#unless errors}}
             <div class="alert alert-success">
@@ -27,7 +28,7 @@
             </div>
         {{/unless}}
     {{/if}}
-</div>
+
 
 {{/partial}}
 {{> layout.hbs}}
@@ -40,3 +41,21 @@
 <!--    <input id="weakness" placeholder="Weakness" name="weakness" type="text">-->
 <!--    <button type="submit" class="btn btn-dark">Go!</button>-->
 <!--</form>-->
+<!--<h3 class="form-title">Create Squad</h3>-->
+<!--<div>-->
+
+<!--</div>-->
+<!--<div class="form-group textbox">-->
+<!--    <i class="fas fa-users"></i>-->
+<!--    <input id="name" class="form-input" placeholder="Name" name="name" type="text">-->
+
+<!--</div>-->
+<!--<div class="form-group textbox">-->
+<!--    <i class="fas fa-user-ninja"></i>-->
+<!--    <input id="email" class="form-input" placeholder="Cause" name="cause" type="text">-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--    <button type="submit" name="submit" id="submit"  class="butn">Go!</button>-->
+<!--</div>-->
+<!--<div id="error_message" class="ajax_response" ></div>-->
+<!--<div id="success_message" class="ajax_response"></div>-->

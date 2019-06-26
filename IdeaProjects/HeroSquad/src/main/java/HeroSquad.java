@@ -1,3 +1,4 @@
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.*;
 
@@ -7,22 +8,22 @@ import java.util.*;
 
     public class HeroSquad {
         public static ArrayList<HeroSquad>theSquads=new ArrayList<>();
-        public ArrayList<String> heroes=new ArrayList<>();
-        public static Map<String,ArrayList<String>> heroes_in_squad=new HashMap<String,ArrayList<String>>();
-        private int squadId;
-        private ArrayList<String> heroess;
+        public ArrayList<Heroes> heroes=new ArrayList<>(maxsize);
+        public static Map<Integer,ArrayList<Heroes>> heroes_in_squad=new HashMap<Integer, ArrayList<Heroes>>();
+        private int id;
+        private ArrayList<Heroes> heroess;
         private String squadpeople;
         private String name;
-        private static int maxsize;
+        private static int maxsize=6;
         private String cause;
         private ArrayList<Object> characters;
         HeroSquad(String name,String cause){
           this.name=name;
           this.cause=cause;
           theSquads.add(this);
-          this.squadId=theSquads.size();
+          this.id=theSquads.size();
           this.heroess=this.heroes;
-          heroes_in_squad.put(name,this.heroes);
+          heroes_in_squad.put(this.id-1,heroes);
 
 
         };
@@ -30,7 +31,7 @@ import java.util.*;
 public static ArrayList<HeroSquad> ShowSquads(){
     return theSquads;
 }
-public ArrayList<String> showHeroes(){
+public ArrayList<Heroes> showHeroes(){
     return this.heroes;
 }
 public String getName(){
@@ -39,29 +40,35 @@ public String getName(){
         public String getCause(){
             return  this.cause;
         }
-        public int getSquadId(){
-    return this.squadId;
+        public static HeroSquad getSquadId(int id){
+                return theSquads.get(id-1);
         }
+        public int getSquadIds(){
+    return this.id;
+        }
+        public static HeroSquad GetSquadById(int theId)
+        {
+    return theSquads.get(theId);
+        };
 
 
-//        public String getSquad(String name){
-//            String squadpeople="";
-//            ArrayList<Object> heroes=new ArrayList<>();
-//            for(Map.Entry<String, ArrayList<String>> entry : HeroSquad.heroes_in_squad.entrySet()){
-//                if(entry.getKey().equals(name)){
-//                    for(int i=0;i<entry.getValue().size();i++){
-//                        squadpeople+=(entry.getValue().get(i));
-//                        squadpeople+=" ";
-//                    }
-//                }
-//            }
-//            this.squadpeople=squadpeople;
-//            return squadpeople;
-//        }
-//        public String showHeroess(){
-//          return this.squadpeople;
-//        }
-        public ArrayList<String> showHeroess(){
+        public static ArrayList<Heroes> getSquad(int id){
+            ArrayList<Heroes> squadpeople=new ArrayList<>();
+            ArrayList<Object> heroes=new ArrayList<>();
+            for(Map.Entry<Integer, ArrayList<Heroes>> entry : HeroSquad.heroes_in_squad.entrySet()){
+                if(entry.getKey()==id){
+                    squadpeople=entry.getValue();
+                    break;
+
+                }
+            }
+            return squadpeople;
+
+        };
+        public String showpoeple(){
+          return this.squadpeople;
+        }
+        public ArrayList<Heroes> showHeroess(){
     return this.heroess;
         }
 

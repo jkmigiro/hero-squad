@@ -1,58 +1,111 @@
 
     {{#partial "content"}}
-        <div class="">
-            <h2>Squads</h2>
-            <ul>
-                <li>
-
         {{#if squads}}
-            {{#each squads  }}
-                <a href="#" class="squad-photo">
-                </a>
 
-                <a href="#" class="squad-compare">Compare</a>
-                <div class="product-rating">
-                    <div>
-                        <span class="squad-stars" style="width: 60px" >
-                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                        </span>
-                    </div>
+    {{#each squads as |item index|}}
 
-                    <span><a href="#">82 reviews</a></span>
+        <div class="col-md-4">
+            <div class="card" style="width:280px;">
+                <img src="/group2.jpg" alt="avatar group">
+                <div class="card-body">
+                    <strong class="d-inline-block mb-2 text-white">{{ name }}</strong>
+                    <h5 class="card-title">{{ name }}</h5>
+                    <p class="card-text">{{ cause }}Yes man</p>
+                    <a href="/showheroes/{{index}}" style="margin-right: 50px">All Heroes</a>
+                    <a class="" href="/theheroes/{{index}}" >Add Hero</a>
                 </div>
-
-                <p class="squad-description">{{ name }}</p>
-                <p class="squad-price">{{ cause }}</p>
-                <p>{{ squadpeople }}</p>
-                <p>{{ squadId }}</p>
-                <p>{{ heroees }}</p>
-                <p>{{ squads.heroees }}</p>
-
-
-<!--                {{#each heroees as |item index|}}-->
-<!--                    <p>{{ heroees }}</p>-->
-<!--                    <li>-->
-<!--                        {{item.[index]}}-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        {{heroees.[index]}}-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        {{heroees}}-->
-<!--                    </li>-->
-<!--                    <p>Index is: {{index}}</p>-->
-<!--                {{/each}}-->
-
-
-            {{/each}}
-        </li>
-        </ul>
+            </div>
+        </div>
+    {{/each}}
         {{else}}
-            <p>There is no squad available</p>
+            <div class="col-md-6">
+
+                <div class="card" style="width:280px;">
+                    <img src="/serveimage.png" alt="avatar group">
+                    <div class="card-body">
+                        <h5 class="card-title">Squad Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet,
+                            hbdasdashdbashbsdhkascgyacbasdgycvasdgkycvsagconsectetur adipiscing elit. Praesent
+                            ac rutrum purus</p>
+                    </div>
+                </div>
+            </div>
+
         {{/if}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
     {{/partial}}
     {{> layout.hbs}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--                {{#each this.heroees as |item index|}}-->
+    <!--                    <p>{{ heroees }}</p>-->
+    <!--                    <li>-->
+    <!--                        {{item.[index]}}-->
+    <!--                    </li>-->
+    <!--                    <li>-->
+    <!--                        {{heroees.[index]}}-->
+    <!--                    </li>-->
+    <!--                    <li>-->
+    <!--                        {{heroees}}-->
+    <!--                    </li>-->
+    <!--                    <p>Index is: {{index}}</p>-->
+            <!--                {{/each}}-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

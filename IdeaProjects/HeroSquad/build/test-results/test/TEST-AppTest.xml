@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-24T12:48:22" hostname="lika" time="0.014">
+<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-26T11:14:43" hostname="lika" time="0.693">
   <properties/>
-  <testcase name="Squads" classname="AppTest" time="0.014"/>
+  <testcase name="Squads" classname="AppTest" time="0.693"/>
   <system-out><![CDATA[The squad is using a constructor: []
-The squad is using a constructor: [Vim]
-The squad is using a constructor: [Vim, NaeNae]
+The squad is using a constructor: []
+The squad is using a constructor: []
 Name is:Flyin
 Name is:Space
 Flyin
 Jasper  Flyin
-{Jasper=[Vim, NaeNae, Deros], Vera=[Vimed, Onii, Chan]}
+{0=[], 1=[Heroes@672d73d6, Heroes@3fec15da, Heroes@656fbcc1]}
 Jasper Jasper Jasper Vera Vera
 Jasper Vera
-One[Vim, NaeNae, Deros] and two [Vimed, Onii, Chan]
-The squad is: [Vim, NaeNae, Deros]
-The squad is using a constructor: [Vim, NaeNae, Deros]
+One[] and two [Heroes@672d73d6, Heroes@3fec15da, Heroes@656fbcc1]
+Squad name is: Jasper
+Squad cause is: Flyin
+ID is: 1
+Squad name is: Vera
+Squad cause is: Space
+ID is: 2
+The squad is: []
+The squad is using a constructor: []
+Jasper id is: 1 Vera is is: 2
+Index 0 of HeroSquad is: Jasper
+Index 0 of HeroSquad is: Vera
+Heroes Jasper Squad are: []
+[]
+Gotcha[]
+Heroes Vera Squad are: [Heroes@672d73d6, Heroes@3fec15da, Heroes@656fbcc1]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

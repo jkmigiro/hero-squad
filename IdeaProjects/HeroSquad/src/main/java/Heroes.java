@@ -12,14 +12,14 @@ public class Heroes {
     private String specialpower;
     private String weakness;
     private String associated_squad;
-    Heroes(String name, int age, String power, String weakness,String squadname) {
+    Heroes(String name, int age, String power, String weakness,String squadname,int squadId) {
 
         this.heroname = name;
         this.age = age;
         this.specialpower = power;
         this.weakness = weakness;
 
-        this.match(squadname,name);
+        this.match(squadId,name);
         this.associated_squad=squadname;
         theHeroes.add(this);
 
@@ -34,33 +34,30 @@ public class Heroes {
 //        HeroSquad obj=(HeroSquad)ob;
 //        HeroSquad.heroes_in_squad.put(squadname, ((HeroSquad) ob).squad_with_heroes.add());
 //    }
- public static String match(String squadname,String heroname){
-String str="";
-     for(Map.Entry<String, ArrayList<String>> entry : HeroSquad.heroes_in_squad.entrySet()){
-          if(entry.getKey().equals(squadname)){
-                entry.getValue().add(heroname);
+ public void  match(int squadId,String heroname){
 
-                str=entry.getKey();
-
+     for(Map.Entry<Integer, ArrayList<Heroes>> entry : HeroSquad.heroes_in_squad.entrySet()){
+          if(entry.getKey()==squadId){
+                entry.getValue().add(this);
                 break;
           }
      }
-     return str;
+
  }
  //function to know which hero is in which squad
-public String getHeroSquad(String name){
-        String squadname="";
-    for(Map.Entry<String, ArrayList<String>> entry : HeroSquad.heroes_in_squad.entrySet()){
+public Integer getHeroSquad(String name){
+        int squadId=0;
+    for(Map.Entry<Integer, ArrayList<Heroes>> entry : HeroSquad.heroes_in_squad.entrySet()){
         ArrayList squad=entry.getValue();
         for(int i=0;i<squad.size();i++){
-            if(name.equals(squad.get(i))){
+            if(name.equals(entry.getValue().get(i).heroname)){
 
-                squadname=entry.getKey();
+                squadId=entry.getKey();
                 break;
             }
         }
     }
-    return squadname;
+    return squadId;
 }
 
     public String getHeroname() {

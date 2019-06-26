@@ -51,7 +51,7 @@
     display: block;
     margin:0;
     font-size: 18px;
-    white-space: nowrap;
+    none-space: nowrap;
     overflow: hidden;
     text-overflow:ellipsis;
 }
@@ -82,7 +82,7 @@
     color: #f09911;
     font-size: 14px;
     overflow: hidden;
-    white-space: nowrap;
+    none-space: nowrap;
 
     margin: 0 5px -3px 0;
 }
@@ -102,7 +102,7 @@
     color: #5d5d5d;
     font-size: 14px;
     line-height: 20px;
-    white-space: normal;
+    none-space: normal;
 
     margin: 20px 0;
 }

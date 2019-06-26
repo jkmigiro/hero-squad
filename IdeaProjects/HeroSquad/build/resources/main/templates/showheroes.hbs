@@ -1,18 +1,27 @@
 {{#partial "content"}}
-    {{#if gettheheroes}}
-        {{#each gettheheroes }}
-            <p>{{ heroname }}</p>
-            <p>{{ associated_squad }}</p>
-            <p>{{ age }}</p>
-
-            <p>{{ specialpower }}</p>
-
-            <p>{{ weakness }}</p>
-
-
+    {{#if squads}}
+        {{#each squads as |item index|}}
+            <div class="col-md-4">
+                        <div class="card " style="width:280px;">
+                            <img src="/group.jpg" alt="avatar group">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ heroname }}</h5>
+                                <p class="card-text">{{ specialpower }}</p>
+                                <p class="card-text">{{ weakness }}</p>
+                                <p class="card-text">{{ associated_squad }}</p>
+                                <p class="card-text">{{ squadId }}</p>
+                                <a href="#" style="margin-right: 50px">Parent Squad</a>
+                                <a href="#" >Add Hero</a>
+                            </div>
+                        </div>
+                    </div>
         {{/each}}
     {{else}}
         <p>Heroes haven't been added yet</p>
     {{/if}}
 {{/partial}}
 {{> layout.hbs}}
+
+<!--<p><span id="nametitle">{{ heroname }}</span> <span class="squad-stars" style="width: 60px" >-->
+<!--                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>-->
+<!--                        </span> <span><a href="#">82 reviews</a></span></p>-->

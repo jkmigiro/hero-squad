@@ -1,0 +1,24 @@
+{{#partial "content"}}
+    {{#if heroes}}
+        {{#each heroes }}
+            <div class="col-md-4">
+                <div class="card text-primary border-primary" style="width:280px;">
+                    <img src="/group.jpeg" alt="avatar group">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ heroname }}</h5>
+                        <p class="card-text">{{ specialpower }}</p>
+                        <p class="card-text">{{ weakness }}</p>
+                        <p class="card-text">{{ associated_squad }}</p>
+                        <p class="card-text">{{ squadId }}</p>
+                        <a href="#" style="margin-right: 50px">Parent Squad</a>
+                        <a href="#" >Add Hero</a>
+                    </div>
+                </div>
+            </div>
+
+        {{/each}}
+    {{else}}
+        <p class="warningtext">Heroes haven't been added yet</p>
+    {{/if}}
+{{/partial}}
+{{> layout.hbs}}
