@@ -1,0 +1,159 @@
+
+
+.squad-list-basic{
+    list-style:none;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.squad-list-basic li{
+    box-sizing:border-box;
+    display: inline-block;
+
+    text-align:left;
+    font:normal 12px sans-serif;
+
+    background-color:#ffffff;
+    border:1px solid #dbe3e7;
+    border-radius: 3px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+
+    margin: 0 12px 14px 0;
+    padding: 25px;
+}
+
+/* The squad image */
+
+.squad-list-basic .squad-photo{
+    display: block;
+    text-align: center;
+    box-shadow : 0 0 20px 8px #f3f3f3 inset;
+
+    width: 275px;
+    margin-bottom: 25px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* The squad name */
+
+.squad-list-basic h2{
+    display: block;
+    font-size: 18px;
+    none-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width: 200px;
+    margin:0;
+}
+
+.squad-list-basic h2 a{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+.squad-list-basic .squad-compare{
+    float:right;
+
+    color: #808080;
+    text-decoration: none;
+
+    margin-top: -16px;
+}
+
+/* Rating */
+
+.squad-list-basic .squad-rating div{
+    display: inline-block;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.squad-list-basic .squad-rating .squad-stars{
+    display: inline-block;
+
+    color: #f09911;
+    font-size: 14px;
+    overflow: hidden;
+    none-space: nowrap;
+}
+
+.squad-list-basic .squad-rating .squad-stars i{
+    margin-right: 2px;
+}
+
+.squad-list-basic .squad-rating span{
+    margin-bottom: -2px;
+}
+
+.squad-list-basic .squad-rating span a{
+    color: #808080;
+    text-decoration: none;
+}
+
+/* squad description */
+
+.squad-list-basic .squad-description{
+    margin-top: 20px;
+
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 1.45;
+    none-space: normal;
+
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+
+/* Price and order button */
+
+.squad-list-basic button{
+    border-radius: 2px;
+    background-color:  #87bae1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+
+    width: 95px;
+    height: 32px;
+}
+
+.squad-list-basic .squad-out-of-stock{
+    color: #c15017;;
+    font-weight: bold;
+    line-height: 32px;
+
+    width: 95px;
+    height: 32px;
+}
+
+.squad-list-basic .squad-price{
+    float: right;
+
+    color:  #4e4e4e;
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-top: 6px;
+    margin: 0;
+}
+
+/* Making the list responsive */
+
+@media (max-width: 800px){
+
+    .squad-list-basic .squad-photo{
+        width: 225px;
+    }
+
+    .squad-list-basic .squad-description{
+        max-width: 225px;
+    }
+}
+

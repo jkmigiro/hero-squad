@@ -1,0 +1,46 @@
+{{#partial "content"}}
+
+{{#if squads }}
+
+
+
+                    <div class="contact-form">
+                    <form action="/newheroes/{{id}}" method="post">
+                        <h3 style="text-align: center;color:black">Welcome to {{ name }} squad</h3>
+                        <h3 class="form-title">Create Hero</h3>
+                        <div class="textbox">
+
+                            <input id="name" placeholder="Name" name="name" type="text">
+                        </div>
+                        <div class="textbox">
+
+                            <input id="age" placeholder="Age" name="age" type="text">
+                        </div>
+                        <br>
+                        <div class="textbox">
+
+                            <input id="power" placeholder="Power" name="power" type="text">
+                        </div>
+                        <br>
+                        <div class="textbox">
+                            <input id="weakness" placeholder="Weakness" name="weakness" type="text">
+
+
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit" class="">
+
+
+                    </form>
+                    </div>
+
+    {{else}}
+    <p>Error somewhere</p>
+{{/if}}
+    {{else}}
+
+{{/partial}}
+{{> layout.hbs}}
+

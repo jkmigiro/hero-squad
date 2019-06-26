@@ -1,0 +1,161 @@
+
+
+.squad-list-vertical{
+    list-style:none;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+}
+
+.squad-list-vertical li{
+    box-sizing:border-box;
+    overflow: hidden;
+
+    text-align:left;
+    font:normal 12px sans-serif;
+
+    background-color:#ffffff;
+    border:1px solid #dbe3e7;
+    border-radius: 3px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+
+    max-width:570px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+/* squad image */
+
+.squad-list-vertical .squad-photo{
+    float:left;
+    display: block;
+
+    text-align: center;
+    box-shadow : 0 0 20px 8px #f3f3f3 inset;
+
+    width: 215px;
+    height: 200px;
+    margin-right: 25px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.squad-list-vertical .squad-details{
+    max-width: 275px;
+    float: right;
+}
+
+/* squad title */
+
+.squad-list-vertical .squad-details h2{
+    display: block;
+    margin:0;
+    font-size: 18px;
+    none-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.squad-list-vertical .squad-details h2 a{
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.squad-list-vertical .squad-details .squad-compare{
+    float:right;
+    color: #808080;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/* squad rating */
+
+.squad-list-vertical .squad-details .squad-rating div{
+    display: inline-block;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.squad-list-vertical .squad-details .squad-rating .squad-stars{
+    display: inline-block;
+
+    color: #f09911;
+    font-size: 14px;
+    overflow: hidden;
+    none-space: nowrap;
+
+    margin: 0 5px -3px 0;
+}
+
+.squad-list-vertical .squad-details .squad-rating .squad-stars i{
+    margin-right: 2px;
+}
+
+.squad-list-vertical .squad-details .squad-rating span a{
+    color: #808080;
+    text-decoration: none;
+}
+
+/* squad description */
+
+.squad-list-vertical .squad-details .squad-description{
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 20px;
+    none-space: normal;
+
+    margin: 20px 0;
+}
+
+/* squad button and price */
+
+.squad-list-vertical .squad-details button{
+    border-radius: 2px;
+    background-color:  #87bae1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+
+    width: 95px;
+    height: 32px;
+}
+
+.squad-list-vertical .squad-details .squad-price{
+    float: right;
+
+    color:  #4e4e4e;
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-top: 6px;
+    margin: 0;
+}
+
+/* Making the squad list responsive */
+
+@media (max-width: 600px){
+
+    .squad-list-vertical li{
+        max-width:265px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .squad-list-vertical .squad-photo{
+        float:none;
+        margin: 0 0 25px 0;
+    }
+
+    .squad-list-vertical .squad-details{
+        float: none;
+    }
+
+    .squad-list-vertical .squad-details .squad-description{
+        margin-top: 10px;
+    }
+
+}
+
